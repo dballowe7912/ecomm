@@ -15,14 +15,13 @@ class SignIn extends Component {
         }
     }
 
-    nandleSubmit = event => {
+    handleSubmit = event => {
         event.preventDefault();
         
         this.setState({ email: '', password: '' });
     }
 
     handleChange = event => {
-        console.log(event.target.value)
 
         const { value, name } = event.target;
         this.setState({
